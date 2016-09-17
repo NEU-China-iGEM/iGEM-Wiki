@@ -275,7 +275,7 @@ input.search-form:hover {
  }
 
 .navbar-nav>li{
-  margin-left: 35px;
+  margin-left: 10px;
   padding-bottom: 28px;
 }
 
@@ -2548,4 +2548,13 @@ shortcodes page css
 
 .about-us-tab-content{
     padding: 0 !important;
+}
+
+.footer-logo{
+    margin: 20px;
+    line-height: 100px;
+}
+
+.footer-logo img{
+    width: 150px;
 }
