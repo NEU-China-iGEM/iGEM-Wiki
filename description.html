@@ -82,8 +82,8 @@
 
 <section id="blog" class="container">
     <div class="center">
-        <h2>Blogs</h2>
-        <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+        <h2>Description</h2>
+        <p class="lead"></p>
     </div>
 
     <div class="blog">
@@ -94,21 +94,82 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-2 text-center">
                             <div class="entry-meta">
-                                <span id="publish_date">07  NOV</span>
-                                <span><i class="fa fa-user"></i> <a href="#"> John Doe</a></span>
-                                <span><i class="fa fa-comment"></i> <a href="__blog-item.html#comments">2 Comments</a></span>
-                                <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
+                                <span id="publish_date">15 Sep</span>
+                                <span><i class="fa fa-user"></i> Zexu Li</span>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-10 blog-content">
-                            <h2>Consequat bibendum quam</h2>
-                            <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</p>
+                            <h2>light-inducible CRISPR/Cas9 system</h2>
+                            <p>
+                                The NEU-China iGEM team sought to create a new mode of gene editing and manipulation for
+                                use in prokaryotic and lower eukaryotic cells . We fused two light-activated plant
+                                proteins, CRY2 or CIB1, to a transcriptional activator VP64 or the  catalytic domain
+                                deleted tCas9 , generating CRY2-VP64 or CIB1-tCas9 chimeric constructs. In the presence
+                                of a specific gRNA guide, the tCas9 domain from CIB1-tCas9 binds to the promoter of a
+                                reporter gene. Once exposing to blue light, the CRY2 domain from CRY2-VP64 can form a
+                                protein complex with CIB1-tCas9, which in turn brings the VP64 domain to the chromatin
+                                and activates the reporter gene.
+                            </p>
+                            <p>
+                                <b>Over the summer, we accomplished the following:</b>
+                            </p>
+                            <h3>
+                                Getting CRY2 and CIB1 gene from Arabidopsis thaliana
+                            </h3>
+                            <p>
+                                Total RNA was isolated from Arabidopsis thaliana and mRNA was reversely transcribed into
+                                cDNA. CRY2 and CIB1 gene was amplified with the specific primers.
+                            </p>
+                            <h3>
+                                Creating/Testing prokaryotic tCas9-CIBN  chimeric constructs
+                            </h3>
+                            <p>
+                                We constructed  tCas9-CIBN  chimeric constructs gene with an prokaryotic RBS sequence
+                                from the Community collection(BBa_B0034). For detection of expression the fusion protein
+                                was tagged with a HA-epitope coding sequence (BBa_K1150016)
+                            </p>
+                            <h3>
+                                Creating/Testing prokaryotic CRY2-VP64  chimeric constructs
+                            </h3>
+                            <p>
+                                We constructed  CRY2-VP64  chimeric constructs gene with an prokaryotic RBS sequence
+                                from the Community collection(BBa_B0034). For detection of expression the fusion protein
+                                was tagged with a FLAG-epitope coding sequence (gactacaaggacgacgacgacaaa)
 
-                            <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper.</p>
-
-                            <div class="post-tags">
-                                <strong>Tag:</strong> <a href="#">Cool</a> / <a href="#">Creative</a> / <a href="#">Dubttstep</a>
-                            </div>
+                            </p>
+                            <h3>
+                                Creating/Testing prokaryotic tCas9-VP64  chimeric constructs
+                            </h3>
+                            <p>
+                                To address these limitations, we adapted the CRISPR/Cas9 activator system for
+                                optogenetic control. We constructed  tCas9-VP64  chimeric constructs gene with an
+                                prokaryotic RBS sequence from the Community collection(BBa_B0034). For detection of
+                                expression the fusion protein was tagged with a FLAG-epitope coding sequence
+                                (gactacaaggacgacgacgacaaa)
+                            </p>
+                            <h3>
+                                Testing Cas9-VP64
+                            </h3>
+                            <p>
+                                We tested our Cas9-VP64 fusion protein by transfecting it into BL21 cells along with a
+                                guide RNA which will target the Cas9-VP64 to upstream regulatory sites on our reporter
+                                construct and activate the expression of GFP. We showed that our Cas9-VP64 fusion is
+                                indeed functional.
+                            </p>
+                            <h3>
+                                Application:light-inducible Gene Activation
+                            </h3>
+                            <p>
+                                We construct this new system in prokaryotic cells and to explore the optimal combination
+                                of these two techniques in order to enable the most efficient gene regulation with
+                                light. We have already produced a GFP expression system which is blue light inducible
+                                in E.Coli. Activating a gene would require targeting an activator to a sequence upstream
+                                of a promoter. tCas9 allows us to target arbitrary sequences using a guide RNA specific
+                                to that sequence.
+                            </p>
+                            <!--<div class="post-tags">-->
+                                <!--<strong>Tag:</strong> <a href="#">Cool</a> / <a href="#">Creative</a> / <a href="#">Dubttstep</a>-->
+                            <!--</div>-->
 
                         </div>
                     </div>

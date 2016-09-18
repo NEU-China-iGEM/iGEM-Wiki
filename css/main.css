@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);*/
 
 
 /*************************
@@ -2135,9 +2135,10 @@ ul.faq li > div h3 {
 }
 
 .blog .blog-item .blog-content h3 {
-  color: #858586;
-  margin-bottom: 40px;
-  /* font-weight: 300 */}
+  color: #285e8e;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .blog .blog-item .blog-content h4 {
   font-size: 14px;
@@ -2159,7 +2160,7 @@ ul.faq li > div h3 {
   font-size: 12px;
   overflow: hidden;
   padding: 5px;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 #publish_date {
@@ -2557,4 +2558,12 @@ shortcodes page css
 
 .footer-logo img{
     width: 150px;
+}
+
+.blog-content{
+    font-size: 18px;
+}
+
+#blog .center h2{
+    text-shadow: 3px 3px 3px #AAA;
 }
