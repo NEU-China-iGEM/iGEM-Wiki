@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Template</title>
+    <title>Our Favorite BioBricks - NEU-China</title>
 
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="background.html">Background</a></li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="description.html">Description</a></li>
@@ -69,7 +69,7 @@
                     </li>
                     <li><a href="safety.html">Safety</a></li>
                     <li><a href="software.html">Software</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parts <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="our-parts.html">Our Parts</a></li>
@@ -89,7 +89,7 @@
 
 <section id="blog" class="container">
     <div class="center">
-        <h2>Design</h2>
+        <h2>Our Favorite BioBricks</h2>
         <p class="lead"></p>
     </div>
 
@@ -100,51 +100,31 @@
                     <img class="img-responsive img-blog" src="images/blog/blog1.jpg" width="100%" alt="" />
                     <div class="row">
                         <div class="col-xs-12 blog-content">
-                            <h2>Design</h2>
-                            <p>
-                                Generally, the project design can be divided into three portions:
-                            </p>
-                            <ul>
-                                <li>CRISPR/Cas9system</li>
-                                <li>Optogenetic system</li>
-                                <li>LACE system</li>
-                            </ul>
-                            <h3>LACE system</h3>
-                            <p>
-                                Optogenetic systems enable precise spatial and temporal control of cell behavior. We
-                                engineered a light-activated CRISPR/Cas9 effector (LACE) system that induces
-                                transcription of endogenous genes in the presence of blue light. This was accomplished
-                                by fusing the light-inducible heterodimerizing proteins CRY2 and CIB1 to a
-                                transactivation domain and the catalytically inactive tCas9, respectively.
-                                The versatile LACE system can be easily directed to new DNA sequences for the dynamic
-                                regulation of endogenous genes.
-                            </p>
-                            <p>To regulate DNA transcription by blue light, the system is based on CRY2/CIBN interaction
-                                in which a light-mediated protein interaction brings together two protein (tCas9 and an
-                                activation domain VP64) . If we remove the stimulation of blue light, dark reversion of
-                                CRY2 will dissociate the interaction with CIBN and shut off transcription.
-                            </p>
+                            <h2>Our Favorite BioBricks</h2>
                             <h3>tCas9-CIBN (Prokaryotic LACE system)</h3>
-                            <p>The NEU-China iGEM team 2016 designed a fusion protein consisting of tCas9 and CIBN for
+                            <p>
+                                The NEU-China iGEM team 2016 designed a fusion protein consisting of tCas9 and CIBN for
                                 sequence-specific transactivation of a desired target locus (more information). We used
                                 our double truncated tCas9 (BBa_K1982001) impaired in its cleavage activity and fused
                                 it to the CIBN (BBa_K1982003). An prokaryotic RBS sequence from the Community
                                 collection(BBa_B0034) fused to the beginning of tCas9-CIBN. For detection of expression
-                                the fusion protein was tagged with a HA-epitope coding sequence (BBa_K1150016) .
+                                the fusion protein was tagged with a HA-epitope coding sequence (BBa_K1150016).
                             </p>
                             <p class="text-center">
                                 <img height="200" width="300" src=""/>
                                 <br/>
                                 <strong>Figure 1: Construct design</strong>
-                            </p>
-                            <p>
-                                tCas9 was fused to CIBN. The resulting fusion construct was flanked by RBS sequences
-                                and tagged by a HA epitope. The pBad/araC promoter and rrnB T1 terminator were chosen
-                                to control gene expression.
+                                tCas9 was fused to CIBN.
+                                The resulting fusion construct was flanked by RBS sequences and tagged by a HA epitope.
+                                The pBad/araC promoter and rrnB T1 terminator were chosen to control gene expression.
                             </p>
                             <h3>CRY2-VP64(Prokaryotic LACE system)</h3>
                             <p>
-                                We used the full-length CRY2 (BBa_K1982002) and fused it to the transcription activator domain VP64 (BBa_K1982000). An prokaryotic RBS sequence from the Community collection(BBa_B0034) fused to the beginning of CRY2-VP64. For detection of expression the fusion protein was tagged with a FLAG-epitope coding sequence (gactacaaggacgacgacgacaaa) .
+                                We used the full-length CRY2 (BBa_K1982002) and fused it to the transcription activator
+                                domain VP64 (BBa_K1982000). An prokaryotic RBS sequence from the Community
+                                collection(BBa_B0034) fused to the beginning of CRY2-VP64. For detection of expression
+                                the fusion protein was tagged with a FLAG-epitope coding sequence
+                                (gactacaaggacgacgacgacaaa) .
                             </p>
                             <p class="text-center">
                                 <img height="200" width="300" src=""/>
@@ -154,15 +134,15 @@
                             <h3>tCas9-Vp64(optogenetic control)</h3>
                             <p>
                                 To address these limitations, we adapted the CRISPR/Cas9 activator system for
-                                optogenetic control. We constructed tCas9-VP64 chimeric constructs gene with an
-                                prokaryotic RBS sequence from the Community collection(BBa_B0034). For detection of
+                                optogenetic control. We constructed tCas9-VP64 chimeric constructs gene with
+                                an prokaryotic RBS sequence from the Community collection(BBa_B0034). For detection of
                                 expression the fusion protein was tagged with a FLAG-epitope coding sequence
                                 (gactacaaggacgacgacgacaaa)
                             </p>
                             <p class="text-center">
                                 <img height="200" width="300" src=""/>
                                 <br/>
-                                <strong>Figure 3: illustrates the detailed design of the this device</strong>
+                                <strong>Figure 3: illustrates the detailed design of the this device.</strong>
                             </p>
                         </div>
                     </div>
