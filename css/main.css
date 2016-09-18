@@ -1021,7 +1021,7 @@ a.accordion-toggle  i{
 }
 
 #carousel-slider {
-  position: relative;
+  /*position: relative;*/
 }
 
 #carousel-slider .carousel-indicators {
@@ -1033,7 +1033,7 @@ a.accordion-toggle  i{
 }
 
 #carousel-slider a i {
-  border: 1px solid #777;
+  border: 1px solid #FFF;
   border-radius:50%;
   font-size: 28px;
   height: 50px;
@@ -1041,7 +1041,7 @@ a.accordion-toggle  i{
   position: absolute;
   top: 50%;
   width: 50px;
-  color:#777;
+  color:#FFF;
 }
 
 #carousel-slider a i:hover {
@@ -1050,23 +1050,20 @@ a.accordion-toggle  i{
   border: 1px solid #bfbfbf;
 }
 
-#carousel-slider 
-.carousel-control {
+#carousel-slider .carousel-control {
   width:inherit;
 }
 
 #carousel-slider .carousel-control.left i {
-  left:-25px
+  left:15px
 }
 
 #carousel-slider .carousel-control.right i {
-  right: -25px;
+  right: 15px;
 }
 
-#carousel-slider
-.carousel-control.left, 
-#carousel-slider
-.carousel-control.right {
+#carousel-slider .carousel-control.left,
+#carousel-slider .carousel-control.right {
   background: none;
 }
 
@@ -2566,4 +2563,8 @@ shortcodes page css
 
 #blog .center h2{
     text-shadow: 3px 3px 3px #AAA;
+}
+
+.carousel-inner img{
+    width: 100%;
 }
