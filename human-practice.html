@@ -14,6 +14,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -23,12 +24,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/__ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/__ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/__ico/apple-touch-icon-57-precomposed.png">
+    <style>
+        #section-1 div{
+            /*background: rgba(0,0,0,0.2);*/
+        }
+        #section-1-1{
+            font-size: 16px;
+            padding: 6px;
+            background: rgba(50,50,200,0.4);
+            box-shadow: 4px 4px 4px #555;
+            color: #ffffff;
+            text-shadow: 2px 2px 1px #333;
+            border-radius: 10px;
+            position: absolute;
+            top:120px;
+            right:5%;
+            width: 600px;
+        }
+    </style>
 </head><!--/head-->
 
 <body>
 
 <header id="header">
-    <nav class="navbar navbar-inverse" role="banner">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,7 +87,7 @@
                         </ul>
                     </li>
                     <li><a href="safety.html">Safety</a></li>
-                    <li><a href="software.html">Software</a></li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parts <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
@@ -87,38 +106,36 @@
 </header><!--/header-->
 
 
-<section id="blog" class="container">
-    <div class="center">
-        <h2>Blogs</h2>
-        <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+<div id="fullpage">
+    <div class="section" id="section-1"  style="background: url('images/human-practice/1.jpg'); background-size: cover; position: relative;">
+        <div id="section-1-1">
+            <h1></h1>
+            <p>
+                Humans often claim to be the king of Earth. In fact, the tiny bacteria is the real leading role behind
+                the scenes manipulation. Nobody knows how many bacteria there are in the life.
+            </p>
+            <p>
+                As for the benefits and hazards of bacteria, people know poorly about them. In order to let us learn
+                more about knowledge of the biology, we tell the mystery of the biological and popularize the knowledge
+                of Synthetic Biology through the way of outdoor display, the questionnaire, the briefing session and
+                so on.
+            </p>
+        </div>
     </div>
-
-    <div class="blog">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="blog-item">
-                    <img class="img-responsive img-blog" src="images/__blog/blog1.jpg" width="100%" alt="" />
-                    <div class="row">
-                        <div class="col-xs-12 blog-content">
-                            <h2>Consequat bibendum quam</h2>
-                            <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</p>
-
-                            <p>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper.</p>
-
-                            <div class="post-tags">
-                                <strong>Tag:</strong> <a href="#">Cool</a> / <a href="#">Creative</a> / <a href="#">Dubttstep</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div><!--/.blog-item-->
-            </div><!--/.col-md-10-->
-
-        </div><!--/.row-->
-
-    </div><!--/.blog-->
-
-</section><!--/#blog-->
+    <div class="section" style="background: #64ff64;">
+        We show the usual living in the air of bacteria, through the naked eye to observe, in fact, there are bacteria
+        everywhere. In order not to let people feel fear, we deliberately used bacteria painting on media , full of
+        artistic breath, and to show that these tiny lives. At the same time, we respectively coated bacteria to the
+        resistant and not resistant medium, to spread the huge role of antibiotics.
+    </div>
+    <div class="section" style="background: #6464ff;">
+        <div class="slide"> Slide 1 </div>
+        <div class="slide"> Slide 2 </div>
+        <div class="slide"> Slide 3 </div>
+        <div class="slide"> Slide 4 </div>
+    </div>
+    <div class="section">Some section3</div>
+</div>
 
 
 <section id="bottom">
@@ -164,11 +181,84 @@
     </div>
 </footer><!--/#footer-->
 
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+//    $(document).ready(function() {
+//        $('#fullpage').fullpage();
+//    });
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors:['firstPage', 'secondPage'],
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: true,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+        bigSectionsDestination: null,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        sectionsColor : ['#ccc', '#1bbc9b'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+});
+</script>
 </body>
 </html>
