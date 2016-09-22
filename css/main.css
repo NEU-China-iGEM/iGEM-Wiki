@@ -652,7 +652,7 @@ input.search-form:hover {
 }
 
 #services {
-  background: #000 url(../images/services/bg_services.png);
+  background: #000 url(../images/__services/bg_services.png);
   background-size: cover;
 }
 
@@ -949,7 +949,7 @@ a.accordion-toggle  i{
 }
 
 #partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+  background: url(../images/__partners/partner_bg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -2720,3 +2720,25 @@ figure.effect-marley:hover p {
     width: 100%;
 }
 
+.title-img{
+    width: 96%;
+    border: 2px #bbb solid;
+    box-shadow: 3px 3px 5px #ccc;
+    margin-bottom: 40px;
+}
+
+.affix {
+    top: 20px;
+}
+
+#side-nav{
+    background: #eefaff;
+    border-radius: 4px;
+    padding-top: 10px;
+    color: #333;
+    z-index: 99;
+}
+
+#side-nav li a{
+    padding: 5px;
+}
