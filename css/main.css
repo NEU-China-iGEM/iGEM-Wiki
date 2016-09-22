@@ -2550,7 +2550,7 @@ shortcodes page css
 .gallery figure img {
     position: relative;
     display: block;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     border-radius: 0;
 }
 
@@ -2697,6 +2697,16 @@ figure.effect-marley:hover p {
 
 .about-us-tab-content{
     padding: 0 !important;
+}
+
+.instructor-panel{
+    padding: 8px;
+    font-size: 18px;
+    line-break: normal;
+}
+
+.instructor-panel img{
+    width: 80%;
 }
 
 .footer-logo{
