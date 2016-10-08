@@ -652,7 +652,7 @@ input.search-form:hover {
 }
 
 #services {
-  background: #000 url(../images/__services/bg_services.png);
+  background: rgba(0,0,0,0.6) url(../images/__services/bg_services.png);
   background-size: cover;
 }
 
@@ -2586,7 +2586,7 @@ figure.effect-marley p {
 
 
 figure.effect-marley p {
-    bottom: 30px;
+    bottom: 0;
     color:#fff;
     line-height: 1.5;
     -webkit-transform: translate3d(0,100%,0);
