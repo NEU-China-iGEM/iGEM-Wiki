@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Template</title>
+    <title>Human Practice - NEU-China</title>
 
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,23 +24,116 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/__ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/__ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/__ico/apple-touch-icon-57-precomposed.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <style>
+        .fp-controlArrow.fp-prev{
+            left: 60px;
+            border-color: transparent #bbb transparent transparent;
+        }
+        .fp-controlArrow.fp-next{
+            right: 20px;
+            border-color: transparent transparent transparent #bbb;
+        }
+        #fp-nav{
+            background: rgba(255,255,255,0.4);
+            border-radius: 4px;
+        }
         #section-1 div{
             /*background: rgba(0,0,0,0.2);*/
         }
         #section-1-1{
-            font-size: 16px;
-            padding: 6px;
-            background: rgba(50,50,200,0.4);
-            box-shadow: 4px 4px 4px #555;
-            color: #ffffff;
-            text-shadow: 2px 2px 1px #333;
-            border-radius: 10px;
+            padding: 20px;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
             position: absolute;
-            top:120px;
-            right:5%;
+            top:0;
+            right:0;
             width: 600px;
+            height: 100%;
         }
+
+
+        #section-2-1{
+            padding: 20px 60px 20px 20px;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
+            position: absolute;
+            top:0;
+            right:0;
+            width: 600px;
+            height: 100%;
+        }
+
+        #section-3-1{
+            padding: 20px 20px 20px 20px;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
+            position: absolute;
+            bottom:0;
+            right:0;
+            width: 100%;
+        }
+        #section-4-1{
+            padding: 20px 30% 20px 30%;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
+        }
+        #section-5-1{
+            padding: 20px 20px 20px 20px;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
+            position: absolute;
+            bottom:0;
+            right:0;
+            width: 100%;
+        }
+        #section-6-1{
+            padding: 20px 20px 20px 20px;
+            font-size: 22px;
+            line-height: 25px;
+            background: rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 4px #999;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 1px 1px 1px #000;
+            /*border-radius: 10px;*/
+            position: absolute;
+            bottom:0;
+            right:0;
+            width: 50%;
+        }
+
     </style>
 </head><!--/head-->
 
@@ -68,7 +161,6 @@
                             <li><a href="description.html">Description</a></li>
                             <li><a href="design.html">Design</a></li>
                             <li><a href="experiment-results.html">Experiment & Results</a></li>
-                            <li><a href="model.html">Model</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -105,10 +197,11 @@
 
 </header><!--/header-->
 
-
 <div id="fullpage">
-    <div class="section" id="section-1"  style="background: url('images/human-practice/1.jpg'); background-size: cover; position: relative;">
+    <div class="section" id="section-1"  style="background-image: url('images/human-practice/1.jpg'); background-size: cover; position: relative;">
         <div id="section-1-1">
+            <div style="margin-top: 50%;"></div>
+            <hr/>
             <h1></h1>
             <p>
                 Humans often claim to be the king of Earth. In fact, the tiny bacteria is the real leading role behind
@@ -120,66 +213,139 @@
                 of Synthetic Biology through the way of outdoor display, the questionnaire, the briefing session and
                 so on.
             </p>
+            <hr/>
+            <p class="text-center" style="color: #ddd; font-size: 14px;">You can also use ↑←↓→ to navigate.</p>
         </div>
     </div>
-    <div class="section" style="background: #64ff64;">
-        We show the usual living in the air of bacteria, through the naked eye to observe, in fact, there are bacteria
-        everywhere. In order not to let people feel fear, we deliberately used bacteria painting on media , full of
-        artistic breath, and to show that these tiny lives. At the same time, we respectively coated bacteria to the
-        resistant and not resistant medium, to spread the huge role of antibiotics.
+    <div class="section" id="section-2" style="position: relative;">
+        <div class="slide" style="background: url('images/human-practice/4.jpg'); background-size: cover; position: relative">
+            <div id="section-2-1">
+                <div style="margin-top: 40%;"></div>
+                <hr/>
+                <h1></h1>
+                We show the usual living in the air of bacteria, through the naked eye to observe, in fact, there are bacteria
+                everywhere. In order not to let people feel fear, we deliberately used bacteria painting on media , full of
+                artistic breath, and to show that these tiny lives. At the same time, we respectively coated bacteria to the
+                resistant and not resistant medium, to spread the huge role of antibiotics.
+                <hr/>
+            </div>
+        </div>
+        <div class="slide" style="background: url('images/human-practice/2.jpg'); background-size: cover; position: relative">
+
+        </div>
+        <!--<div class="slide" style="background: url('images/human-practice/3.jpg'); background-size: cover; position: relative"></div>-->
     </div>
-    <div class="section" style="background: #6464ff;">
-        <div class="slide"> Slide 1 </div>
-        <div class="slide"> Slide 2 </div>
-        <div class="slide"> Slide 3 </div>
-        <div class="slide"> Slide 4 </div>
+    <div class="section" id="section-3" style="position: relative;">
+        <div class="slide" style="background: url('images/human-practice/5.jpg'); background-size: cover; position: relative">
+            <div id="section-3-1">
+                <div></div>
+                <hr/>
+                <h1></h1>
+                In our eyes, there is always a flaw in the world. We have specially borrowed a microscope and some organ
+                sections from the teaching experiment center, which has aroused public concern. Whether adults or
+                children are deeply attracted by the microscopic world. In the activity, we have attracted the
+                attention of biological researchers. They listened carefully to the knowledge about the synthetic
+                biology and the iGEM contest.
+                <hr/>
+            </div>
+        </div>
+        <div class="slide" style="background: url('images/human-practice/7.jpg'); background-size: cover; position: relative">
+        </div>
+        <div class="slide" style="background: url('images/human-practice/8.jpg'); background-size: cover; position: relative">
+        </div>
+        <div class="slide" style="background: url('images/human-practice/6.jpg'); background-size: cover; position: relative">
+        </div>
     </div>
-    <div class="section">Some section3</div>
+    <div class="section" id="section-4" style="position: relative;">
+        <div class="slide" style="background: url('images/human-practice/9.jpg'); background-size: cover; position: relative">
+            <div id="section-4-1">
+                <div></div>
+                <hr/>
+                <h1></h1>
+                Water is the source of life. We can't live without water. The water we drink in our lives is weakly
+                acidic or weakly basic? We all don't know. So we show people the pH of the bottled water in life,
+                through a simple experiment.
+                <hr/>
+            </div>
+        </div>
+        <div class="slide" style="background: url('images/human-practice/10.jpg'); background-size: cover; position: relative">
+        </div>
+        <div class="slide" style="background: url('images/human-practice/11.jpg'); background-size: cover; position: relative">
+        </div>
+    </div>
+    <div class="section" id="section-5" style="position: relative;">
+        <div class="slide" style="background: url('images/human-practice/13.jpg'); background-size: cover; position: relative">
+            <div id="section-5-1">
+                The investigation of synthetic biology problems
+            </div>
+        </div>
+        <div class="slide" style="background: url('images/human-practice/14.jpg'); background-size: cover; position: relative">
+        </div>
+        <div class="slide" style="background: url('images/human-practice/15.jpg'); background-size: cover; position: relative">
+        </div>
+        <div class="slide" style="background: url('images/human-practice/16.jpg'); background-size: cover; position: relative">
+        </div>
+    </div>
+    <div class="section" id="section-6" style="position: relative;">
+        <div class="slide" style="background: url('images/human-practice/17.jpg'); background-size: cover; position: relative">
+            <div id="section-6-1">
+                <div></div>
+                <hr/>
+                <h1></h1>
+                It is a new semester, we introduce the IGEM contest in freshman parents meeting for freshman, and
+                popularize the knowledge of synthetic biology. For the students who are about to learn biology, this
+                is the best way to understand the synthetic biology and the iGEM contest.
+                <hr/>
+            </div>
+        </div>
+        <div class="slide" style="background: url('images/human-practice/18.jpg'); background-size: cover; position: relative">
+        </div>
+    </div>
+
+    <div class="section fp-auto-height">
+        <section id="bottom">
+            <!--LOGO群-->
+            <div class="footer-logo text-center wow fadeInDown">
+                <img style="width: 105px;" src="images/footer-logo/iGEM.png"/>
+                <img style="width: 175px;" src="images/footer-logo/NEU.png"/>
+                <img style="width:  98px;" src="images/footer-logo/CLHS.png"/>
+                <img style="width: 112px;" src="images/footer-logo/SC.png"/>
+                <br/>
+                <img style="width: 112px;" src="images/footer-logo/FungiDB.png"/>
+                <img style="width:  98px;" src="images/footer-logo/GENEWIZ.png"/>
+                <img style="width:  98px;" src="images/footer-logo/geshare.png"/>
+                <img style="width: 112px;" src="images/footer-logo/IDT.png"/>
+                <img style="width: 112px;" src="images/footer-logo/mathworks.png"/>
+                <img style="width:  91px;" src="images/footer-logo/NCBI.png"/>
+                <img style="width:  91px;" src="images/footer-logo/NEB.png"/>
+                <br/>
+                <img style="width: 126px;" src="images/footer-logo/OMEGA.png"/>
+                <img style="width: 112px;" src="images/footer-logo/SA.png"/>
+                <img style="width: 126px;" src="images/footer-logo/SanGon.png"/>
+                <img style="width:  84px;" src="images/footer-logo/SMS.png"/>
+                <img style="width: 112px;" src="images/footer-logo/SnapGene.png"/>
+                <img style="width:  98px;" src="images/footer-logo/TaKaRa.png"/>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2016 NEU-China Team.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
 </div>
 
-
-<section id="bottom">
-    <!--LOGO群-->
-    <div class="footer-logo text-center wow fadeInDown">
-        <img style="width: 150px;" src="images/footer-logo/iGEM.png"/>
-        <img style="width: 250px;" src="images/footer-logo/NEU.png"/>
-        <img style="width: 140px;" src="images/footer-logo/CLHS.png"/>
-        <img style="width: 160px;" src="images/footer-logo/SC.png"/>
-        <br/>
-        <img style="width: 160px;" src="images/footer-logo/FungiDB.png"/>
-        <img style="width: 140px;" src="images/footer-logo/GENEWIZ.png"/>
-        <img style="width: 140px;" src="images/footer-logo/geshare.png"/>
-        <img style="width: 160px;" src="images/footer-logo/IDT.png"/>
-        <img style="width: 160px;" src="images/footer-logo/mathworks.png"/>
-        <img style="width: 130px;" src="images/footer-logo/NCBI.png"/>
-        <img style="width: 130px;" src="images/footer-logo/NEB.png"/>
-        <br/>
-        <img style="width: 180px;" src="images/footer-logo/OMEGA.png"/>
-        <img style="width: 160px;" src="images/footer-logo/SA.png"/>
-        <img style="width: 180px;" src="images/footer-logo/SanGon.png"/>
-        <img style="width: 120px;" src="images/footer-logo/SMS.png"/>
-        <img style="width: 160px;" src="images/footer-logo/SnapGene.png"/>
-        <img style="width: 140px;" src="images/footer-logo/TaKaRa.png"/>
-    </div>
-</section><!--/#bottom-->
-
-<footer id="footer" class="midnight-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                &copy; 2016 NEU-China Team.
-            </div>
-            <div class="col-sm-6">
-                <ul class="pull-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="team.html">About Us</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer><!--/#footer-->
 
 
 <script src="js/jquery.js"></script>
@@ -200,14 +366,14 @@ $(document).ready(function() {
         lockAnchors: false,
         anchors:['firstPage', 'secondPage'],
         navigation: true,
-        navigationPosition: 'right',
+        navigationPosition: 'left',
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 500,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
@@ -216,7 +382,7 @@ $(document).ready(function() {
         easingcss3: 'ease',
         loopBottom: false,
         loopTop: false,
-        loopHorizontal: true,
+        loopHorizontal: false,
         continuousVertical: false,
         continuousHorizontal: false,
         scrollHorizontally: false,
@@ -239,8 +405,9 @@ $(document).ready(function() {
         controlArrows: true,
         verticalCentered: true,
         sectionsColor : ['#ccc', '#1bbc9b'],
+//        marginTop: '90px',
         paddingTop: '3em',
-        paddingBottom: '10px',
+        paddingBottom: '0',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
