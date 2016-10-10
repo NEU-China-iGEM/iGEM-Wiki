@@ -87,18 +87,20 @@
 
 
 <section id="blog" class="container">
-    <div class="center">
-        <h2>Protocol</h2>
-        <p class="lead"></p>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="title-img">
+                <img class="img-responsive" src="images/notebook/protocol_top.jpg" width="100%" />
+                <h2 style="right: 10%; top: 15%;">Protocol</h2>
+            </div>
+        </div>
     </div>
-
     <div class="blog">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="blog-item">
-                    <img class="img-responsive img-blog" src="images/Notebook/protocol_top.JPG" width="100%" alt="" />
                     <div class="blog-content">
-                        <div class="col-md-3 col-xs-hidden" style="font-size: 12px; padding: 0">
+                        <div class="col-md-3 hidden-sm hidden-xs" style="font-size: 12px; padding: 0;">
                             <div data-spy="affix" id="side-nav" class="scrollspy text-center">
                                 <h5 class="text-center">Navigation</h5>
                                 <ul class="nav nav-pills nav-stacked">
@@ -808,7 +810,8 @@ QIAquick Spin Column and centrifuge for 1 min. 
     $(function(){
         $('#side-nav').affix({
             offset: {
-                top: $('#side-nav').offset().top
+                top: $('#side-nav').offset().top,
+                bottom: "400px"
             }
         });
     });
