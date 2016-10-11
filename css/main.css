@@ -652,8 +652,8 @@ input.search-form:hover {
 }
 
 #services {
-  background: rgba(0,0,0,0.6) url(../images/__services/bg_services.png);
-  background-size: cover;
+  /*background: rgba(0,0,0,0.6) url(../images/__services/bg_services.png);*/
+    background: rgba(0, 0, 0, 1) url(../images/home/homewood.jpg) repeat;
 }
 
 #services .lead,
@@ -864,7 +864,7 @@ a.accordion-toggle  i{
   border: 0 none;
   line-height: 24px;
   margin-right:0;
-  padding: 13px 15px;
+  padding: 23px 15px;
 }
 
 .nav-tabs li:last-child{
@@ -2767,10 +2767,44 @@ figure.effect-marley:hover p {
 
 .title-img h2{
     position: absolute;
-    display: inline-block;
-    font: bold 45px Helvetica, Sans-Serif;
+    display: block;
+    top: 40% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 40% !important;
+    text-align: center;
+    font: bold 50px Helvetica, Sans-Serif;
     padding: 10px;
     color: #fff;
-    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.6),
+                 -1px -1px 2px rgba(0,0,0,0.3);
     margin-top: -22px;
+}
+
+.home-6{
+    background-size: cover;
+    min-height: 211px;
+    padding: 0;
+}
+
+.home-6 div{
+    background: rgba(0,0,0, 0.25);
+    margin-top: 100px;
+}
+
+.home-6 h3{
+    color: #fff;
+    text-shadow: 1px 1px 1px #444;
+    font-size: 24px;
+}
+
+.home-6 p{
+    color: #fff;
+    text-shadow: 1px 1px 1px #444;
+    font-size: 18px;
+}
+
+.blog-content p{
+    font-size: 18px;
+    line-height: 24px;
 }
