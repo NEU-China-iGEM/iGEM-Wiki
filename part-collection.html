@@ -199,6 +199,134 @@
                                 <br/>
                                 <strong>Figure 1 illustrates the detailed design of the whole device</strong>
                             </p>
+                            <!-- -&#45;&#45;&#45;&#45;-->
+                            <h3>tCas9-CIBN (Prokaryotic LACE system)</h3>
+                            <p>The NEU-China iGEM team 2016 designed a fusion protein consisting of tCas9 and CIBN for
+                                sequence-specific transactivation of a desired target locus (more information). We used
+                                our double truncated tCas9 (<a href="http://parts.igem.org/part:BBa_K1982001">BBa_K1982001</a>) impaired in its cleavage activity and fused
+                                it to the CIBN (<a href="http://parts.igem.org/part:BBa_K1982003">BBa_K1982003</a>). An prokaryotic RBS sequence from the Community
+                                collection(BBa_B0034) fused to the beginning of tCas9-CIBN. For detection of expression
+                                the fusion protein was tagged with a HA-epitope coding sequence (<a href="http://parts.igem.org/part:BBa_K1150016">BBa_K1150016</a>) .
+                            </p>
+                            <p class="text-center">
+                                <img width="100%" src="images/project/Design1.png" title="Overview of the tCas9-CIBN(Prokaryotic LACE system) 2016"/>
+                                <br/>
+                                <strong>Figure 2: Construct design</strong>
+                            </p>
+                            <p>
+                                tCas9 was fused to CIBN. The resulting fusion construct was flanked by RBS sequences
+                                and tagged by a HA epitope. The pBad/araC promoter and rrnB T1 terminator were chosen
+                                to control gene expression.
+                            </p>
+                            <h3>CRY2-VP64(Prokaryotic LACE system)</h3>
+                            <p>
+                                We used the full-length CRY2 (<a href="http://parts.igem.org/part:BBa_K1982002">BBa_K1982002</a>) and fused it to the transcription activator domain VP64 (<a href="http://parts.igem.org/part:BBa_K1982000">BBa_K1982000</a>). An prokaryotic RBS sequence from the Community collection(BBa_B0034) fused to the beginning of CRY2-VP64. For detection of expression the fusion protein was tagged with a FLAG-epitope coding sequence (gactacaaggacgacgacgacaaa) .
+                            </p>
+                            <p class="text-center">
+                                <img width="100%" src="images/project/Design2.png" title="Overview of the CRY2-VP64(Prokaryotic LACE system) 2016"/>
+                                <br/>
+                                <strong>Figure 3: illustrates the detailed design of the this device</strong>
+                            </p>
+                            <h3>tCas9-Vp64(optogenetic control)</h3>
+                            <p>
+                                To address these limitations, we adapted the CRISPR/Cas9 activator system for
+                                optogenetic control. We constructed tCas9-VP64 chimeric constructs gene with an
+                                prokaryotic RBS sequence from the Community collection(BBa_B0034). For detection of
+                                expression the fusion protein was tagged with a FLAG-epitope coding sequence
+                                (gactacaaggacgacgacgacaaa)
+                            </p>
+                            <p class="text-center">
+                                <img width="100%" src="images/project/Design3.png" title="Overview of the tCas9-VP64(Prokaryotic LACE system) 2016"/>
+                                <br/>
+                                <strong>Figure 4: illustrates the detailed design of the this device</strong>
+                            </p>
+                            <h2>Proof of concept</h2>
+                            <p>
+                                According to our design, we transfected a targeting plasmid into E.coli BL21 to express fusion protein composed of the protein tCas9 and CIBN. Simultaneously, we transfected GFP,gRNA and CRY2-VP64 plasmid into E.coli BL21. Then, the promoter of GFP were continually repressed by gRNA and tCas9. When exposed to blue light, the N-terminal fragment of CIB1 (CIBN) would interact with CRY2,Subsequently,Binding of the CRY2-VP64 on the upstream sequence of promoter will result in activating promoter via recruitment of the RNA polymerase II by the VP64 subunit of CRY2-VP64 .Generally, the experimental procedure can be divided into four steps:
+                            </p>
+                            <ol>
+                                <li>Characterization of fusion protein</li>
+                                <li>Verification of the suppression efficiency of gRNA</li>
+                                <li>Silencing capability validation</li>
+                                <li>Targeting capability validation</li>
+                                <li>Model</li>
+                            </ol>
+                            <h3> Characterization of fusion protein </h3>
+                            <p class="text-center">
+                                <img width="60%" src="images/project/Results1.png"/>
+                                <br/>
+                                <strong>Figure 1: validate protein</strong>
+                            </p>
+
+                            <p>CRY2-VP64:<br>
+                                Stationary cultures of BL21 J23114 was subcultured into fresh media and growth for 4 hours. Subsequent purification of protein from the cell-free supernatant and visualization using SDS-PAGE confirms that proteins of the expected size are present in the supernatant and hence most likely successfully secreted by the engineered bacterial strains.
+                            </p>
+                            <p class="text-center">
+                                <img width="90%" src="images/project/Results2.png"/>
+                                <br/>
+                                <strong>Figure 2：Western blot analysis of CRY2-VP64 protein levels.<br>
+                                    Left :Negative control; Right:CRY2-VP64, ~78.5 kDa</strong>
+                            </p>
+                            <p>tCas9-CIBN:<br>
+                                Stationary cultures of BL21 pBAD was subcultured into fresh media and induced for 4 hours or 16 hours using different concentrations L-arabinose. Subsequent purification of protein from the cell-free supernatant and visualization using SDS-PAGE confirms that proteins of the expected size are present in the supernatant and hence most likely successfully secreted by the engineered bacterial strains.</p>
+                            <p class="text-center">
+                                <img width="75%" src="images/project/Results3.png"/>
+                                <br/>
+                                <strong>  Figure 3：Western blot analysis of tCas9-CIBN protein levels.<br>
+                                    Left :Negative control; Right: tCas9-CIBN, ~180 kDa</strong>
+                            </p>
+
+                            <p class="text-center">
+                                <img width="100%" src="images/project/Results4.png"/>
+                                <br/>
+                                <strong>Figure 4: Western blot analysis of tCas9-CIBN protein levels.<br>
+                                    Left :Negative control; Right: tCas9-CIBN, ~180 kDa</strong>
+                            </p>
+                            <h3> Verification of the suppression efficiency of gRNA</h3>
+                            <p>To ensure the suppression efficiency of the gRNA,four gRNA sequences targeting different sites of CSPA promoter were designed and transfected into the E. coli strains BL21.Efficient suppression of CSPA promoter in strains  BL21 was observed.GFP levels in GFP transgenic strains decrease after inserting a fragment that expresses CSPA promoter gRNA .And the sequence with the best suppression effect was selected for further study. </p>
+                            <p class="text-center">
+                                <img width="60%" src="images/project/Results51.jpg"/>
+                                <img width="80%" src="images/project/Results52.png"/>
+                                <br/>
+                                <strong>
+                                    Figure 5: Results of the GFP-influence under the CSPA promotor<br/>
+                                    only using different gRNAs targeted to CSPA promoter in BL21.
+                                </strong>
+                            </p>
+                            <h3>Silencing capability validation</h3>
+                            <p>
+                                We next evaluated the effect of tCas9-cibn on suppressing CSPA promoter.GFP expression levels were assayed in strains BL21 after co-transformation with tCas9-cibn and CRY2-VP64 and gRNA in the absence of light conditions.
+                            </p>
+                            <p class="text-center">
+                                <img width="60%" src="images/project/Results61.jpg"/>
+                                <img width="80%" src="images/project/Results62.png"/>
+                                <br/>
+                                <strong>
+                                    Figure 6: Silencing capability of tCas9-CIBN <br/> using different
+                                    gRNAs targeted to CSPA promoter in BL21.
+                                </strong>
+                            </p>
+                            <p>
+                                Compared with control groups, Green fluorescence intensity and mRNA levels were dramatically reduced in groups treated with gRNA and tCas9-cibn.These results suggest that gRNA can specifically guide tCas9 to target upstream of CSPA promoter, thereby inhibiting CSPA promoter to reduce GFP expression levels.
+                            </p>
+                            <h3>Activation capability validation</h3>
+                            <p>
+                                Spatially controlled activation of gene expression was achieved in strains co-transfected with the LACE system, a reporter vector containing a gRNA target sequence upstream of CSPA promoter and the eGFP gene.Strains transfected with LACE and incubated in the dark did not show a significant difference in eGFP levels compared to control groups transfected with empty plasmid.Strains containing the LACE system and gRNA exhibited significantly brighter eGFP fluorescence intensity when illuminated compared to when incubated in the dark.Activation of the eGFP reporter in strains transfected with the gRNA and LACE constructs, the gRNA and tCas9-VP64 expression plasmid or an empty plasmid as a negative control was quantified after 24 hours of illumination or incubation in the dark.
+                            </p>
+                            <p class="text-center">
+                                <img width="55%" src="images/project/Results71.jpg"/>
+                                <br/>
+                                <strong>
+                                    Figure 7: Activation capability of LACE system <br/>
+                                    using gRNA-R1 targeted to CSPA promoter in BL21.
+                                </strong>
+                            </p>
+                            <h3>
+                                Result
+                            </h3>
+                            <p>
+                                The LACE system provides a straightforward and robust optogenetic method to regulate the expression of endogenous genes using the CRISPR/tCas9 system. When co-transfected with gRNAs into E.coli that are stimulated with blue light, LACE produces a high level of transcriptional activation that is, in some cases, comparable to those observed with tCas9-VP64.
+                            </p>
                         </div>
                     </div>
                 </div><!--/.blog-item-->
